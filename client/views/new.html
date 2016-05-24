@@ -3,9 +3,9 @@
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
 
-        {{#autoForm collection="Stories" id="insertBookForm" type="insert"}}
-          {{> afQuickField name='title'}}
-          {{> afQuickField name='body' rows=6}}
+        {{#autoForm collection="Stories" id="insertStory" type="insert"}}
+          {{> afQuickField name='title' placeholder='Your Story\'s Title'}}
+          {{> afQuickField name='body' rows=6 placeholder='What\'s your story?'}}
           <button type="submit" class="btn btn-primary">Insert</button>
         {{/autoForm}}
       </div>
