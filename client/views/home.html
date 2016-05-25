@@ -3,13 +3,20 @@
     {{countStories}}
     <a onclick="window.location.reload()">Refresh</a>
   {{/if}}
-  {{#if Template.subscriptionsReady}}
-    {{#each stories}}
-      <h3>{{title}}</h3>
-      <p>{{body}}</p>
-    {{/each}}
-  {{else}}
-    <p>Loading...</p>
-  {{/if}}
+  <div class="content">
+    {{#if Template.subscriptionsReady}}
+      {{#each stories}}
+        <div class="story">
+          <div class="story-text">
+            <h3>{{title}}</h3>
+            <p>{{body}}</p>
+          </div>
+
+        </div>
+      {{/each}}
+    {{else}}
+      <p>Loading...</p>
+    {{/if}}
+  </div>
 
 </template>

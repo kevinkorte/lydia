@@ -1,0 +1,16 @@
+.content,
+.story {
+  display: flex;
+}
+.content {
+  flex-flow: row wrap;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.story {
+  width: 100%;
+}
+.story-text {
+  width:80%;
+}
