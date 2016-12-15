@@ -13,7 +13,7 @@ Template.home.onRendered(function() {
 
 Template.home.helpers({
   stories: ()=> {
-    return Stories.find({},{reactive: false});
+    return Stories.find({}, {sort: {createdAt: -1}, reactive: false});
   },
   countStories: function() {
     if (Session.get('countStories') < Stories.find().count()) {
